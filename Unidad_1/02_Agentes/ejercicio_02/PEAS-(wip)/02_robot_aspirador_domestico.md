@@ -1,0 +1,8 @@
+    ** Robot aspiradora **
+
+| Letra | Significado | Pregunta guía                                                                                                                                                                                                                        |
+| --- | --- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **P** | *Performance* (medida de desempeño) | grado de limpieza, grado de uso de carga/tiempo de ejecucion, limpieza de area delimitada, seguimiento de patrones                                                                                                                   |
+| **E** | *Environment* (entorno) | comercial, domestico, industrial, pisos, paredes, techos, de diferentes superficies y materiales                                                                                                                                     |
+| **A** | *Actuators* (actuadores) | mangueras, camaras, ruedas, servos, motor de sucion,contenedor de desperdicio,                                                                                                                                                       |
+| **S** | *Sensors* (sensores) | camara de profundidad, sistema de monitoreo de limpieza, sistema de monitoreo de movimiento, sistema de monitoreo de carga, sistema de monitoreo de posicion, sistema de monitoreo de almacenamiento, sistema de comunicacion remota |

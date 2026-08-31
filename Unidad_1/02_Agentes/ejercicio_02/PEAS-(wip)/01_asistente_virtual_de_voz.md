@@ -1,0 +1,8 @@
+    ** Asistente virtual de voz **
+
+| Letra | Significado | Pregunta guía                                                                                                                                                                                        |
+| --- | --- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **P** | *Performance* (medida de desempeño) | Agendado de llamadas, reuniones, visitas, puede alertar en tiempo y forma, buscar contenido en linea, traduccion en tiempo real, realizar stream audio                                               |
+| **E** | *Environment* (entorno) | mobil/ Escritorio/ web / Gadgets                                                                                                                                                                     |
+| **A** | *Actuators* (actuadores) | herramientas de su sistema operativo, gestor de archivos, monitor de alarmas, sistema de notificaciones, sistema de red, sistema administrador de recursos del SO                                    |
+| **S** | *Sensors* (sensores) | sistema monitor de alarma, sistema monitor de notificaciones, escuchador de los inputs del usuario touch o teclado, microfonos, bocinas, pantallas, dispositivos externos conectados via red o harware |
