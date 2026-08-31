@@ -31,6 +31,7 @@ Fundamentally classified in 5 types(external information):
     - Agentes de aprendizaje.
 
 The book (AIMA) classified agents in :
+
     - simple reflex
     - model-based reflex
     - goal-based agents 
