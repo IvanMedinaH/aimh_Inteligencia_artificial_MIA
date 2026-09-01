@@ -30,12 +30,6 @@ Fundamentally classified in 5 types(external information):
     - Basados en utilidad 
     - Agentes de aprendizaje.
 
-The book (AIMA) classified agents in :
-    - simple reflex
-    - model-based reflex
-    - goal-based agents 
-    -utility-based agents
-
 # Design principles (Intelligent)
 is a rational agent if have:
 1. [x] Performance meassure
@@ -92,12 +86,12 @@ over the environment.
   * metacognition (Self-Monitoring)
   * statefulness (persistent awareness of the agent's own identity)
   
-Y AUNQUE TODOS ESAS DIMENSIONES PUEDAN OCURRIR Y SERVIR PARA EVALUAR A UN AGENTE
-NO PUEDE OCURRIR EN RETROSPECTIVA
+Y AUNQUE TODOS ESAS DIMENSIONES PUEDAN OCURRIR
+Y SERVIR PARA EVALUAR A UN AGENTE NO PUEDE OCURRIR EN RETROSPECTIVA
 
 ### **<<you only know what the best choice was after everything has already happened<<**
 
-------------------
+---
 
 **Omniscience (Impossible):** Knowing the actual outcome of an action before it happens. 
 This requires an impossible, perfect perception of the future and every 
@@ -105,3 +99,59 @@ hidden variable in the environment.
 
 **Rationality (Achievable):** Doing the expected best action based on the
 information available and the percepts received up to that point.
+
+---
+
+## The book (AIMA) classified agents in :
+   
+    - simple reflex
+    - model-based reflex
+    - goal-based agents 
+    -utility-based agents
+
+### simple reflex
+Most basic agent, it chose actions based on current perception,
+ignoring  the whole record of perceptions
+
+    - works with basic if/else
+    - only works if the environment is **"fully observable"**
+    - Ex.   A thermostat 
+### model-based reflex
+this agent can operate in partially observed environment,
+because it keeps an internal state
+mechanism:the inner state keeps record of the aspects of the environment
+that the agent cant see in that moment.
+
+    - updates the model using 2 knowledges
+        -how the world evolves
+        -how the actions affect the world.
+    -Ex. a pedestrian getting untracked behind something...
+    the last state is stored and remembered by the inner model
+
+
+### goal-based agents
+in this case the agent needs a goal to decide what to do
+when there are multiple options.
+    
+    - combines the inner state with a description  of the desired goal
+    - introduces search and  plan 
+    - it is more flexible than reflex agents, if goal changes, desition rules
+    get new calculations, witout code refactors
+
+### utility-based agents
+with goals Agents only see failure and success, BUT, utility agents
+work with a degree of desirability
+
+    -Mechanism: Maps a estate of the environment to a number,
+    real that represents the level of "hapyness" or efficency of the agent.
+
+### Learning agents
+A learning agent can act over unknown environments and become highly competent
+in comparison of its initial state.
+
+a learning agent is a composed one, as it is composed of 4 coordinated components
+    
+    -Execution:, percept and act
+    -Critic: evaluates the agent act against the standard measure
+    -learning element: takes the feedback and understand the error, and  modify the knowledge
+    -problem generator: suggest new ways and explore new challenges
