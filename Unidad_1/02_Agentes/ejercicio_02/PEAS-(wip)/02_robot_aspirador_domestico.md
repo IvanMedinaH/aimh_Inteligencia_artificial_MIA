@@ -19,7 +19,7 @@ bajo el esquema PEAS, pienso que es necesario entender que caracteristicas tiene
 | **A** | *Actuators* (actuadores) | cepillos,  mangueras, camaras, ruedas, servos, motor de sucion,contenedor de desperdicio, dispositivo bluetooth, pantalla nivel de carga                                                                                             |
 | **S** | *Sensors* (sensores) | camara de profundidad, sistema de monitoreo de limpieza, sistema de monitoreo de movimiento, sistema de monitoreo de carga, sistema de monitoreo de posicion, sistema de monitoreo de almacenamiento, sistema de comunicacion remota |
 
-## Environment task:
+## Task  Environment:
 Parcialmente observable: ya que no se puede conocer todo lo que esta sucio en el espacio delimitado
 Episodico: ya que un evento no depende del anterior
 Dinamico: el ambiente puede cambiar de un momento a otro y cada evento puedo ser diferente

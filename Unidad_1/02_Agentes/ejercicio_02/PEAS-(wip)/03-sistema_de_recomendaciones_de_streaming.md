@@ -18,7 +18,7 @@ bajo el esquema PEAS, defino el siguiente concepto/prototipo:
 | **S** | *Sensors* (sensores) | cuadros de input en pantalla, monitor del microfono, links, listas y demas controles en pantalla con los que el usuario puede interactuar |
 
 
-## Environment Task:
+## Task  Environment:
 **Parcialmente observable**:el asistente solo puede conocer lo que el usuario le permita 
 
 **Secuencial**:El asistente ofrece basado en el perfil, y es ajustable, la alineacion

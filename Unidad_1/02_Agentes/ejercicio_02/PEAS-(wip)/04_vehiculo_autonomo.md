@@ -26,7 +26,7 @@ del tema.
 | **A** | *Actuators* (actuadores) | motor, ruedas, camaras,  bocina, pantallas, odometro digital, freno, acelerador, palancas, botones,                                                                                                                            |
 | **S** | *Sensors* (sensores) | +sistema de monitoreo de velocidad,<br/>+ sistema de monitoreo de direccion,<br/>+ sensores de proximidad de peatones,<br/>+ sistema touch en pantallas,<br/>+ sensor de profundidad,<br/>+ sensor de carga <br/> |
 
-## Environment task:
+## Task  Environment:
 **Parcialmente observable:** ya que no se puede conocer, lo que esta sucediendo con los otros vehiculos al rededor o en segmentos de via fuera del rango visual 
 
 **Secuencial:** ya que un evento al conducir puede o no ser producto de la consecuencia, o consecuencia directa de otro

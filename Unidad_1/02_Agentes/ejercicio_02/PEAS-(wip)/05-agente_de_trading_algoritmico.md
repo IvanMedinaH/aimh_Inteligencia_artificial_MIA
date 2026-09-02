@@ -18,7 +18,7 @@ bajo el esquema PEAS, pienso que es necesario entender que caracteristicas tiene
 | **A** | *Actuators* (actuadores) | APIs de Mercados, Sitios de noticias, Otros agentes                                                                                  |
 | **S** | *Sensors* (sensores) | APIS de Mercados, APIS de Banca central, scripts personalizados y algoritmos que monitoreen empresas, noticias, y otras aplicaciones |
 
-## Environment task:
+## Task  Environment:
 **Parcialmente observable:** dada la volatilidad de los mercados, solo se puede ir conociendo el estado parcial de estos 
 
 **Episodico:** cada operacion es independiente de la anterior
@@ -37,10 +37,10 @@ deterministicos.
 ## Performance:
 **(how to measure this system)**:
 
-| Dimension a medir         | Medido en      |
-|---------------------------|----------------|
-| Desempeño en compras      | /% de ganancia |
-| Exactidud de predicciones | /% de acierto  |
-| ROI(retorno de inversion) | %anual         |
-|                           |                |
-|                           |                |                              
+| Dimension a medir         | Medido en             |
+|---------------------------|-----------------------|
+| Desempeño en compras      | /% de ganancia        |
+| Exactidud de predicciones | /% de acierto         |
+| ROI(retorno de inversion) | %anual                |
+| Perdidas maxima esperada  | valores de tolerancia |
+|                           |                       |                              

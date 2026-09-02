@@ -19,7 +19,7 @@ NOTA:* la naturaleza de los actuadores utilizados, les permitira ser
 tanto actuador como sensor en este caso el microfono y las bocinas
 (transductor reversible).
 
-## Environment Task:
+## Task  Environment:
 **Parcialmente observable**: ya que no se puede conocer que solicitara el usuario en donde opera este agente del medio auditivo, 
 aunque existe un rango definido de las capacidades del asistente, por lo que tampoco puede realizar actividades fuera de ese rango
 
