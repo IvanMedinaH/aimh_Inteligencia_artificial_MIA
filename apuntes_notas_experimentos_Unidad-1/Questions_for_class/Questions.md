@@ -20,3 +20,5 @@ Existe el overfitting en el diseño de agentes, en especifico su?
 Cuando se elabora el [PEAS] como se evitar caer en overfitting respecto
 al performance measure, o mejor dicho como evitar conflicto entre dimensiones?
 
+Encontre que hay actuadores que pueden a su vez funcionar como sensores, que tan comun 
+es esto en software igual?
