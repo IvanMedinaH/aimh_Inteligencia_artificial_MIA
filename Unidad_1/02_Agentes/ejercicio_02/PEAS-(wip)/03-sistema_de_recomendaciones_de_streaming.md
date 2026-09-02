@@ -30,6 +30,10 @@ se puede medir con la escala de valoracion
 en tiempo(sin solicitud), si el usuario esta navegando su sistema, 
 El agente reacciona en el momento en el que se solicita una recomendacion 
 
+determinismo: deterministico, no se puede predecir que elegira el usuario
+
+
+
 ## Performance:
 **(how to measure this system)**:
 
