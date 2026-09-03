@@ -27,7 +27,7 @@ aunque existe un rango definido de las capacidades del asistente, por lo que tam
 
 **Dinamico**: el ambiente puede cambiar de un momento a otro y cada evento puedo ser diferente
 
-**Continuo**: no se puede cuantificar el grado de claridad con la que el usuario habla
+**Discreción**: Continuo, no se puede cuantificar el grado de claridad con la que el usuario habla
 al dispositivo por lo que podria fallar si no entiende en la interaccion
 
 

@@ -1,5 +1,5 @@
     ** Agente de Trading Algoritmico **
-Para poder diseñar un Robot aspiradora,
+Para poder diseñar un agente de Trading Algoritmico,
 bajo el esquema PEAS, pienso que es necesario entender que caracteristicas tiene:
 
 ### Agente capaz de enteder los mercados locales e interacionales para:
