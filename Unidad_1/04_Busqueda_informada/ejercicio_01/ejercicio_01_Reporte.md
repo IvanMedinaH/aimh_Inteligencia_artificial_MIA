@@ -1,4 +1,8 @@
 
+## DATA de las corridas del algoritmo para
+
+    [Zerind - Hirsova]
+---
 <br>python .\02_heuristics.py --from-city Zerind --to Hirsova          
 <br>Heuristic: Euclidean distance to Hirsova (map coordinates)
 <br>
@@ -85,6 +89,7 @@ Reporte de Comparación:
 
 **Heurística utilizada:** Distancia euclidiana hacia Hirsova (coordenadas del mapa)
 
+---
 ### 1\. Comparación de Resultados y Caminos Encontrados
 
 Los algoritmos **NO** devolvieron el mismo camino:
@@ -109,6 +114,7 @@ Los algoritmos **NO** devolvieron el mismo camino:
 
     -   **Desempeño:** Expandió 6 nodos (generó 18).
 
+---
 
 ### **¿Por qué difieren los caminos?**
 
@@ -122,15 +128,32 @@ la ruta verdaderamente óptima (676 km) haciendo un mayor número de expansiones
 
 Se utilizó la **distancia euclidiana** calculada a partir de las coordenadas del mapa para
 el destino Hirsova (a diferencia de la tabla estándar de AIMA que comúnmente reporta 
-distancias en línea recta hacia Bucharest). De acuerdo con la consulta a `02_heuristics.py`,
-los valores de $h(n)$ de interés son:
+distancias en línea recta hacia Bucharest).
 
 
+---
 
-## Criterios de aceptación(diseño de reporte final)
+### Respuestas a las Preguntas Clave del Reporte
 
-  - si Greedy y A* devolvieron el **mismo** camino o no, y por qué;
-  - qué heurística se usó (tabla AIMA vs. euclidiana);
-  - en al menos un punto de decisión, cómo `h(n)` (Greedy) frente a
-    `f(n) = g(n) + h(n)` (A*) explica la ciudad que cada algoritmo expandió.
-- Incluyes evidencias (capturas o salida de terminal) de las corridas.
+1. **¿A* encontró el camino de menos km y Greedy coincidió o se desvió?**
+   **Sí**, 
+   - A* encontró el camino óptimo con **676 km**. 
+   - Greedy no coincidió y se desvió obteniendo un camino subóptimo de **715 km** (+39 km más largo) al tomar la ruta por Oradea y Fagaras.
+
+2. **¿Por qué Greedy puede devolver un camino más caro aunque $h$ sea admisible?**
+   - La admisibilidad de $h(n)$ ($h(n) \le h^*(n)$) :
+     - solo garantiza la optimicidad en el algoritmo **A***. 
+     - Greedy Best-First Search ignora por completo el costo acumulado $g(n)$ y selecciona nodos basándose únicamente 
+       en la menor $h(n)$ local. Al tomar decisiones con poca vision en cada paso, un nodo puede parecer más cercano 
+       en línea recta pero forzar un trayecto real $g(n)$ mucho más costoso.
+
+3. **Comportamiento de $f(n)$ en A* y Consistencia de $h$:**
+   En la ruta elegida por A*, la función $f(n)$ **no disminuye a lo largo del camino** ($463 \rightarrow 540 \rightarrow 559 \rightarrow 602 \rightarrow 607 \rightarrow 629 \rightarrow 656 \rightarrow 676$). 
+   Esto ocurre porque la distancia euclidiana es una **heurística consistente (monótona)** que cumple con la desigualdad triangular $h(n) \le c(n, a, n') + h(n')$. Esto garantiza matemáticamente que $f(n) = g(n) + h(n)$ sea no decreciente a lo largo de cualquier secuencia de nodos explorados. (La misma propiedad aplica cuando se utiliza la tabla de distancias en línea recta de AIMA hacia Bucharest).
+
+
+### Tabla comparativa:
+| **Algoritmo** | **Heurística usada** | **Path (Camino)** | **Depth** | **Cost** | **Expanded** |
+| --- | --- | --- | --- | --- | --- |
+| **Greedy Best-First Search** | Distancia euclidiana a Hirsova ($h$) | **Zerind** → Oradea → Sibiu → Fagaras → Bucharest → Urziceni → **Hirsova** | 6 carreteras | 715 km | 6 nodos |
+| **A* Search** | Distancia euclidiana a Hirsova ($h$) | **Zerind** → Arad → Sibiu → Rimnicu Vilcea → Pitesti → Bucharest → Urziceni → **Hirsova** | 7 carreteras | 676 km | 11 nodos |

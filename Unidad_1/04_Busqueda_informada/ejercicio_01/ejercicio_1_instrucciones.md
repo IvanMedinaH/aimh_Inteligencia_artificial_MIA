@@ -142,6 +142,7 @@ python 04_a_star_search.py           --from-city ORIGEN --to DESTINO
   `Búsqueda no informada/project` (`03_uniform_cost_search.py`). Si `h` es
   admisible, el costo de A* debería coincidir con el de UCS; Greedy no
   tiene por qué.
+ 
 - Cambia solo el destino (mismo origen): una vez a Bucharest y otra a una
   ciudad distinta. Observa cómo cambia la etiqueta de la heurística y si
   Greedy sigue (o deja de) coincidir con A*.
