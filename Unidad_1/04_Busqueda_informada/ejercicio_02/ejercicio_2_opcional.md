@@ -37,12 +37,21 @@ para Timisoara → Sibiu:
 | **A*** (`04_a_star_search.py`)                | Timisoara → Arad → Sibiu | **258 km**   | 3 nodos      |
 | **Greedy** (`03_greedy_best_first_search.py`) | Timisoara → Arad → Sibiu | 258 km       | 3 nodos      |
 
+<br><br>
+<br><br>
+
+---
+
+---
+
+---
 
 
 ## Instruccion: 
 - Cambia solo el destino (mismo origen): una vez a Bucharest y otra a una
   ciudad distinta. Observa cómo cambia la etiqueta de la heurística y si
   Greedy sigue (o deja de) coincidir con A*.
+<br><br>
 
 ---
 ## Data, Corridas en la consola: 
