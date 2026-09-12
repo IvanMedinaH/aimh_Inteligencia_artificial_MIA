@@ -1,0 +1,1 @@
+literal las capturas de las corridas estan en los archivos adjuntados todo corrio en colab nada local
