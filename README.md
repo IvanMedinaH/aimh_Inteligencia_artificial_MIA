@@ -19,7 +19,7 @@ apuntes_notas_experimentos_Unidad-x:
 
 
 Proyecto_final:
-contendra mi proyecto final para la materia
+Propuesta/prototipo para la materia
 ---
 
 
