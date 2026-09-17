@@ -38,3 +38,6 @@ Ingest system : para agregar nuevos documentos que sirvan para consultar (txt, p
 
 *Nota: si los comandos fallan es por que no se encuentra posicionado en la carpeta que debe 
 desde la consola para ejecutarse, considerar eso.
+
+- Agregar su clave de google AI 
+- el proyecto se entreno con archivos random sobre la <br> instalacion de Unity3D el motor de videojuegos
